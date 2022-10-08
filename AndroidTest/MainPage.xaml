@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndroidTest.MainPage">
+
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout>
+            <VerticalStackLayout>
+                <Label Margin="0,0,0,20"
+                       x:Name="LabelForWeather"
+                       FontFamily="OpenSans_Semibold"
+                       FontSize="32"/>
+                
+                <Border>
+                    <Entry Placeholder="Название горда"
+                           Margin="5,0,0,0"/>
+                </Border>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    
+                    <Button Text="Погода в выбранном городе"
+                        Margin="10"
+                        Clicked="BtnClickCity"
+                        FontFamily="OpenSans_Semibold"
+                        Grid.Row="0"
+                        FontSize="24"
+                        TextColor="Black"/>
+
+                    <Button Text="Погода в СПб"
+                        Margin="10"
+                        Clicked="BtnClickSpb"
+                        FontFamily="OpenSans_Semibold"
+                        Grid.Row="1"
+                        FontSize="24"/>
+                </Grid>
+
+            </VerticalStackLayout>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
